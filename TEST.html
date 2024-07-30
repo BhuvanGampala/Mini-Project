@@ -1,0 +1,330 @@
+<html>
+    <head>
+        <title>TEST</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        </style>
+        <script>
+            function updateText() {
+              var menu = document.getElementById("pattern-select");
+              var selectedOption = menu.options[menu.selectedIndex].value;
+              var displayArea = document.getElementById("displayText");
+              
+              if(selectedOption === "p1") {
+                displayArea.innerHTML = "Single-core processor: 0.0764999 seconds<br>Multi-core processor: 0.0305001 seconds<br>Difference: 0.0459998 seconds";
+              } 
+              else if(selectedOption === "p2") {
+                displayArea.innerHTML = "Single-core processor: 0.1432999 seconds<br>Multi-core processor: 0.0331001 seconds<br>Difference: 0.1101998 seconds";
+              }
+              else if(selectedOption === "p3") {
+                displayArea.innerHTML = "Single-core processor: 0.1454999 seconds<br>Multi-core processor: 0.0345001 seconds<br>Difference: 0.1109998 seconds";
+              }
+              else if(selectedOption === "p4") {
+                displayArea.innerHTML = "Single-core processor: 0.782999 seconds<br>Multi-core processor: 0.4913001 seconds<br>Difference: 0.2916989 seconds";
+              }
+              else if(selectedOption === "p5") {
+                displayArea.innerHTML = "Single-core processor: 0.1812999 seconds<br>Multi-core processor: 0.1423001 seconds<br>Difference: 0.0389998 seconds";
+              }
+              else if(selectedOption === "p6") {
+                displayArea.innerHTML = "Single-core processor: 0.1934999 seconds<br>Multi-core processor: 0.1345001 seconds<br>Difference: 0.0589998 seconds";
+              }
+              else if(selectedOption === "p7") {
+                displayArea.innerHTML = "Single-core processor: 0.1934999 seconds<br>Multi-core processor: 0.1345001 seconds<br>Difference: 0.0589998 seconds";
+              }
+              else if(selectedOption === "p8") {
+                displayArea.innerHTML = "Single-core processor: 0.1743999 seconds<br>Multi-core processor: 0.0814001 seconds<br>Difference: 0.0929998 seconds";
+              }
+              else if(selectedOption === "p9") {
+                displayArea.innerHTML = "Single-core processor: 0.1333999 seconds<br>Multi-core processor: 0.1004001 seconds<br>Difference: 0.0329998 seconds";
+              }
+              else if(selectedOption === "p10") {
+                displayArea.innerHTML = "Single-core processor: 0.1812999 seconds<br>Multi-core processor: 0.1423001 seconds<br>Difference: 0.0389998 seconds";
+              }
+              else if(selectedOption === "p11") {
+                displayArea.innerHTML = "Single-core processor: 0.1996999 seconds<br>Multi-core processor: 0.0967001 seconds<br>Difference: 0.1029998 seconds";
+              }
+              else if(selectedOption === "p12") {
+                displayArea.innerHTML = "Single-core processor: 0.1782999 seconds<br>Multi-core processor: 0.0913001 seconds<br>Difference: 0.0869998 seconds";
+              }
+              else if(selectedOption === "p13") {
+                displayArea.innerHTML = "Single-core processor: 0.1689999 seconds<br>Multi-core processor: 0.0700001 seconds<br>Difference: 0.0989998 seconds";
+              }
+              else if(selectedOption === "p14") {
+                displayArea.innerHTML = "Single-core processor: 0.2107999 seconds<br>Multi-core processor: 0.1378001 seconds<br>Difference: 0.0729998 seconds";
+              }
+              else if(selectedOption === "p15") {
+                displayArea.innerHTML = "Single-core processor: 0.1507999 seconds<br>Multi-core processor: 0.0387001 seconds<br>Difference: 0.1120998 seconds";
+              }
+
+              
+            }
+            </script>
+    </head>
+    <body>
+
+      <!--HEADER-->
+      <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <div class="col-md-3 mb-2 mb-md-0">
+            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" fill="currentColor" class="bi bi-bounding-box" viewBox="0 0 16 16">
+                <path d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2zm6 1v2h2v6h-2v2H5v-2H3V5h2V3zm1-2h3v3h-3zm3 11v3h-3v-3zM4 15H1v-3h3zM1 4V1h3v3z"/>
+              </svg>
+              <span class="fs-4"> Team Origin</span>
+            </a>
+          </div>
+    
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+            <li><a href="#" class="nav-link px-2">Features</a></li>
+            <li><a href="#" class="nav-link px-2">Pricing</a></li>
+            <li><a href="#" class="nav-link px-2">FAQs</a></li>
+            <li><a href="#" class="nav-link px-2">About</a></li>
+          </ul>
+    
+          <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-outline-primary me-2">Login</button>
+            <button type="button" class="btn btn-primary">Sign-up</button>
+          </div>
+        </header>
+      </div>
+
+      <!--INTRO-->
+      <div class="px-4 py-5 my-5 text-center">
+        
+        <!-- <img class="d-block mx-auto mb-4" src="./images/website_Banner.png" alt="" width="800" height="200"> -->
+        <!-- <h2 class="title">Welcome to Team Origin Website</h2> -->
+
+        <h1 class="title">Fractal Pattern Generator</h1>
+
+    <!-- <div class="d-flex flex-column justify-content-center w-100 h-100"></div> -->
+
+    <div class="shirt" id="shirt" style="background-color:lightblue;"></div>
+
+    <!-- <div class="color-picker">
+        <label for="color-select">Choose a color:</label>
+        <select id="color-select">
+            <option value="white">White</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="lightgreen">Green</option>
+            <option value="pink">Pink</option>
+            <option value="#FFB6C1">Light Pink</option>
+            <option value="#FFA07A">Light Salmon</option>
+            <option value="#98FB98">Pale Green</option>
+            <option value="#AFEEEE">Pale Turquoise</option>
+            <option value="#D3D3D3">Light Gray</option>
+            <option value="#E6E6FA">Lavender</option>
+            <option value="#F0E68C">Khaki</option>
+            <option value="#F5DEB3">Wheat</option>
+            <option value="#FFFACD">Lemon Chiffon</option>
+            <option value="#E0FFFF">Light Cyan</option>
+            <option value="#F08080">Light Coral</option>
+            <option value="#D8BFD8">Thistle</option>
+            <option value="#FFC0CB">Pink</option>
+            <option value="#FFDAB9">Peach Puff</option>
+        </select>
+    </div>
+-->
+
+    <div class="pattern-picker">
+        <label for="pattern-select">Choose a pattern:</label>
+        <select id="pattern-select" onChange="updateText()">
+            <option value="select">Select</option>
+            <option value="p1">pattern 1</option>
+            <option value="p2">pattern 2</option>
+            <option value="p3">pattern 3</option>
+            <option value="p4">pattern 4</option>
+            <option value="p5">pattern 5</option>
+            <option value="p6">pattern 6</option>
+            <option value="p7">pattern 7</option>
+            <option value="p8">pattern 8</option>
+            <option value="p9">pattern 9</option>
+            <option value="p10">pattern 10</option>
+            <option value="p11">pattern 11</option>
+            <option value="p12">pattern 12</option>
+            <option value="p13">pattern 13</option>
+            <option value="p14">pattern 14</option>
+            <option value="p15">pattern 15</option>
+        </select>
+        <br>
+        <br>
+        <h4>Time Taken to generate the above pattern</h4>
+        <div id="displayText">
+            <p> Single-core processor: 0.1782999 seconds<br>
+                Multi-core processor: 0.0913001 seconds<br>
+                Difference: 0.0869998 seconds</p>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+        <div class="col-lg-6 mx-auto">
+          <p style="font-family: adobe; font-size: 22.7;">Welcome to our innovative textile design generation platform! We Create and explore unique, fun, and cool patterns tailored for shirts, pants, blankets, and more. Discover the seamless beauty of parallel computing, where intricate patterns emerge from the symphony of synchronized processes.</p>
+        </div>
+      </div>
+
+      
+
+      <!--ALBUM-->
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container" style="margin-top:-140px;">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-reset">
+                        <div class="card shadow-sm">
+                            <img src="./images/i1.png" class="card-img-top" alt="img1" width="100%" height="225" onclick="changePattern('p1')">
+                            <div class="card-body">
+                                <p class="card-text">Image 1.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-reset">
+                        <div class="card shadow-sm">
+                            <img src="./images/i2.png" class="card-img-top" alt="img1" width="100%" height="225" onclick="changePattern('p2')">
+                            <div class="card-body">
+                                <p class="card-text">Image 2.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-reset">
+                        <div class="card shadow-sm">
+                            <img src="./images/i3.png" class="card-img-top" alt="img1" width="100%" height="225" onclick="changePattern('p3')">
+                            <div class="card-body">
+                                <p class="card-text">Image 3.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-reset">
+                        <div class="card shadow-sm">
+                            <img src="./images/i4.png" class="card-img-top" alt="img1" width="100%" height="225" onclick="changePattern('p4')">
+                            <div class="card-body">
+                                <p class="card-text">Image 4.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-reset">
+                        <div class="card shadow-sm">
+                            <img src="./images/i5.png" class="card-img-top" alt="img1" width="100%" height="225" onclick="changePattern('p5')">
+                            <div class="card-body">
+                                <p class="card-text">Image 5.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-reset">
+                        <div class="card shadow-sm">
+                            <img src="./images/i6.png" class="card-img-top" alt="img1" width="100%" height="225" onclick="changePattern('p6')">
+                            <div class="card-body">
+                                <p class="card-text">Image 6.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-reset">
+                        <div class="card shadow-sm">
+                            <img src="./images/change3.jpg" class="card-img-top" alt="img1" width="100%" height="225" onclick="changePattern('p7')">
+                            <div class="card-body">
+                                <p class="card-text">Image 7.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-reset">
+                        <div class="card shadow-sm">
+                            <img src="./images/i8.png" class="card-img-top" alt="img1" width="100%" height="225" onclick="changePattern('p8')">
+                            <div class="card-body">
+                                <p class="card-text">Image 8.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-reset">
+                        <div class="card shadow-sm">
+                            <img src="./images/change1.jpg" class="card-img-top" alt="img1" width="100%" height="225" onclick="changePattern('p9')">
+                            <div class="card-body">
+                                <p class="card-text">Image 9.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-reset">
+                        <div class="card shadow-sm">
+                            <img src="./images/i10.jpg" class="card-img-top" alt="img1" width="100%" height="225" onclick="changePattern('p10')">
+                            <div class="card-body">
+                                <p class="card-text">Image 10.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-reset">
+                        <div class="card shadow-sm">
+                            <img src="./images/i11.jpg" class="card-img-top" alt="img1" width="100%" height="225" onclick="changePattern('p11')">
+                            <div class="card-body">
+                                <p class="card-text">Image 11.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-reset">
+                        <div class="card shadow-sm">
+                            <img src="./images/i12.jpg" class="card-img-top" alt="img1" width="100%" height="225" onclick="changePattern('p12')">
+                            <div class="card-body">
+                                <p class="card-text">Image 12.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-reset">
+                        <div class="card shadow-sm">
+                            <img src="./images/change2.jpg" class="card-img-top" alt="img1" width="100%" height="225" onclick="changePattern('p13')">
+                            <div class="card-body">
+                                <p class="card-text">Image 13.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-reset">
+                        <div class="card shadow-sm">
+                            <img src="./images/change4.jpg" class="card-img-top" alt="img1" width="100%" height="225" onclick="changePattern('p14')">
+                            <div class="card-body">
+                                <p class="card-text">Image 14.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-reset">
+                        <div class="card shadow-sm">
+                            <img src="./images/change5.jpg" class="card-img-top" alt="img1" width="100%" height="225" onclick="changePattern('p15')">
+                            <div class="card-body">
+                                <p class="card-text">Image 15.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
